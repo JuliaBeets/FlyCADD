@@ -1,0 +1,12 @@
+Chromosomes considered: 6
+Number of regions: 6
+Total aligned positions: 133647856 (Exp: 133880608)
+Total mutations: 2173829/565006 (Exp: 2173829/565006); Rate: 0.01623707/0.13729941
+Abs. mutation rate non-CpG: 0.01626535	Abs. mutation rate CpGs: 0.00422757
+Likelihood altering a CpG: 1.50391760; Altering another base: 0.17785378
+TOTAL INSERTS FROM MSA:	591502
+Length	Count	nFreq
+INSERTIONS: gfreq=0.00442582, [(1, 0.06077916896308043), (2, 0.03309371735006813), (3, 0.0266660129636079), (4, 0.023036270376093404), (5, 0.021944135...
+TOTAL DELETIONS FROM MSA:	0
+Length	Count	nFreq
+DELETIONS: gfreq=0.00000000, []...

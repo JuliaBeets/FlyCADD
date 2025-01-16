@@ -1,0 +1,11 @@
+#!/bin/bash
+
+input_vcf="trimmed_snps_sim_variants_anc117_filtered.vcf"
+
+cat ${input_vcf} | awk '$1 ~ /^#/ {print $0;next} {print $0 | "sort -k1,1 -k2,2n"}' > out_sorted.vcf
+input_vcf="out_sorted.vcf"
+
+chromosomes=("2L" "2R" "3L" "3R" "4" "X")
+for chr in "${chromosomes[@]}"; do
+    awk -v chr="$chr" '$1 == chr || $1 ~ /^#/ {print}' "$input_vcf" > "variants/simulated_chr${chr}.vcf"
+done
