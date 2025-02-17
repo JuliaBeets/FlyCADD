@@ -10,10 +10,10 @@ The repository represents FlyCADD as published in the original manuscript, detai
 Contact: Julia Beets - j.beets@vu.nl 
 ______________________________________________________________________________________________________________________
 
-##How to use
+## How to use
 
 The steps of FlyCADD are described in {DOI added once published}, refer to the manuscript for details. Five steps for creating FlyCADD scores include:
-- Extract ancestor (./1_extract_ancestor/): The ancestral sequence was extracted from the Multiple Alignment Format file of a 166-way multi-species alignment (Kim et al., 2024). Each node in the alignment file can be chosen, for FlyCADD we extracted the ancestral sequence at node 117, the last common ancestor between *D. melanogaster* and *D. tani*. 
+- Extract ancestor [1_extract_ancestor](1_extract_ancestor/): The ancestral sequence was extracted from the Multiple Alignment Format file of a 166-way multi-species alignment (Kim et al., 2024). Each node in the alignment file can be chosen, for FlyCADD we extracted the ancestral sequence at node 117, the last common ancestor between *D. melanogaster* and *D. tani*. 
 - Create trainingdata (./2_create_trainingdata/): The training dataset consists of derived and simulated variants. Derived variants were identified as those with a different allele in the ancestral sequence, at high frequency (> 0.9) in *D. melanogaster* populations. Simulated variants were simulated *de novo* based on mutation rates extracted by comparison of the reference genome dm6 and reconstructed ancestral genome. The set of simulated variants was randomly trimmed to match the number of derived variants.
 - Annotate variants (./3_annotate/): The derived and simulated variants were annotated with 691 features, consisting of 38 distinct annotations and combinations thereof.
 - Train and test model (./4_train_test_model/): 90% of the derived and simulated variants were used for training the model. The model is a logistic regressor by Turi Create. The remaining 10% of the dataset was used for testing the model using the built-in function model.evaluate().
