@@ -38,12 +38,10 @@ Usage: `python merge_all_annotations.py -v <path to directory with VEP processed
 
 ## Add annotations
 Adds repeattype, TFBS, miRNA, ReMap, CRM, 124Conservation, BG3 and S2 chromatin states and PhyloP and GERP computed from MSA.
-Usage: python add_annotations.py -o <Path to merged annotations> -a <Path to annotation to add> -b <Path to second annotation to add> -c <Path to third annotation to add> -d <Path to fourth annotation to add> etc...
+Usage: `python add_annotations.py -o <Path to merged annotations> -a <Path to annotation to add> -b <Path to second annotation to add> -c <Path to third annotation to add> -d <Path to fourth annotation to add> etc...`
 
 ## Imputation and one-hot encoding
 Fully annotated .tsv files for simulated and derived variants are processed with `data_encoding_mv_handling.py` to handle missing values with imputation based on the mean in simulated variants and categorical features are one-hot encoded. This script is wrapped to process all files.
 Usage: `python encoding_mv_wrapper.py -i <path to directory containing fully annotated .tsv files`
 
-The final product at this stage consists of `.csv` files per chromosome for simulated and derived variants with merged annotations for all variants, imputed and hot-encoded.
-
-It is possible to run this step with the Snakefile Snakemake_gen_annotations.sn as follows: snakemake -c4 --snakefile Snakemake_gen_annotations.sn'
+The final product at this stage consists of `.csv` files per chromosome for simulated and derived variants with merged annotations for all variants, imputed and hot-encoded. Columns depend on the annotations added.

@@ -6,8 +6,8 @@ Processed (annotated, imputed and hot-encoded) derived and simulated variants pe
 Usage: `python feature_scaling.py -i <path to directory containing processed variants>`
 
 ### Training and testing
-Cross-validation was apply to determine the L2 penalization for training.
-Usage: python <script.py> -i <Path to scaled Dataframes>
+Cross-validation was apply to determine the L2 penalization for training. <br />
+Usage: `python <script.py> -i <Path to scaled Dataframes>`
 
 The sets of variants are split into a training dataset (90%) and a testing dataset (10%). This data is fitted to the parameters of a logistic classifier (TuriCreate) with the L2 norm penalization. The fitted model is tested by predicting the class (derived/neutral (1) or simulated/deleterious (0)) and the performance of the model on this test dataset is evaluated. <br/>
 Usage: `python train_test_model.py -i <path to directory with scaled datasets per chromosome from the previous step>`
