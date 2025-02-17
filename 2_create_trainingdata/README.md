@@ -1,6 +1,6 @@
 # Create derived and simulated variants
 The second step in creating the FlyCADD was creating two sets of variants: derived variants (proxy-neutral/benign) and simulated variants (proxy-deleterious). Variants that are derived over evolutionary time between the existence of the ancestor and the modern *D. melanogaster* and present in the modern species at high frequency (> 90 %, fixed/nearly-fixed) were assumed to be neutral or benign. Simulation based on observed mutation rates and other statistics of sequence evolution (obtained by comparing the ancestral sequence to the reference sequence (Release 6)of *D. melanogaster*, included in this repository) results in simulated *de novo* mutations that are assumed to be enriched in deleterious variants as they have not experienced selection depleting deleteriousness.
-This part of the pipeline requires the reconstructed ancestral sequences in FASTA format (`.fa`) per chromosome from the previous step, complete reference genome, in FASTA format (`.fa`), reference genome per chromosome in FASTA format (`.fa`) and Python dependencies listed in `cadd.yml`.
+This part of the pipeline requires the reconstructed ancestral sequences in FASTA format (`.fa`) per chromosome from the previous step, full reference sequence in FASTA format (`.fa`), reference sequence per chromosome in FASTA format (`.fa`) and Python dependencies listed in `FlyCADD-environment.yml`.
 
 ## Simulation of *de novo* variants
 ### Create parameters for simulation
