@@ -1,5 +1,5 @@
 # Create derived and simulated variants
-The second step in creating the FlyCADD was creating two sets of variants: derived variants (proxy-neutral/benign) and simulated variants (proxy-deleterious). Variants that are derived over evolutionary time between the existence of the ancestor and the modern *D. melanogaster* and present in the modern species at high frequency (> 90 %, fixed/nearly-fixed) were assumed to be neutral or benign. Simulation based on observed mutation rates and other statistics of sequence evolution (obtained by comparing the ancestral sequence to the reference sequence (Release 6)of *D. melanogaster*, included in this repository) results in simulated *de novo* mutations that are assumed to be enriched in deleterious variants as they have not experienced selection depleting deleteriousness.
+The second step in creating the FlyCADD was creating two sets of variants: derived variants (proxy-neutral/benign) and simulated variants (proxy-deleterious). Variants that are derived over evolutionary time between the existence of the ancestor and the modern *D. melanogaster* and present in the modern species at high frequency (> 90 %, fixed/nearly-fixed) were assumed to be neutral or benign. Simulation based on observed mutation rates and other statistics of sequence evolution (obtained by comparing the ancestral sequence to the reference sequence (Release 6) of *D. melanogaster*, included in this repository) results in simulated *de novo* mutations that are assumed to be enriched in deleterious variants as they have not experienced selection depleting deleteriousness.
 This part of the pipeline requires the reconstructed ancestral sequences in FASTA format (`.fa`) per chromosome from the previous step, full reference sequence in FASTA format (`.fa`), reference sequence per chromosome in FASTA format (`.fa`) and Python dependencies listed in `FlyCADD-environment.yml`.
 
 ## Simulation of *de novo* variants
@@ -35,7 +35,7 @@ The script `derived_var_gen.py` selects based on the criteria derived variants a
 Usage: `python wrapper_derived_gen.py <list of chromosomes, e.g. '2L','2R','3L','3R','X','4'> <path to ancestral sequence> <path to reference genome> <path to frequency files>`
 
 ## Finalize variants: equal sets of derived and simulated SNPs
-Simulated variants are downsampled to match the number of derived variants. Simulated variants are shuffled and the first x variants are selected for the final set of simulated variants to match the number of derived variants.
+Simulated variants are downsampled to match the number of derived variants. Simulated variants are shuffled and the first x variants are selected for the final set of simulated variants to match the number of derived variants. <br />
 Usage: `python trim.py -s <path to directory with simulated variants> -d <path to directory with derived variants>` <br />
 Finally, a shell-script `proces_sim.sh` was used to sort the trimmed VCF with simulated variants and split the file into VCF files per chromosome.
 
