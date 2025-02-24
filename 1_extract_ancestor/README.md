@@ -1,6 +1,6 @@
 # Extract reconstructed ancestral sequence from multi-species sequence alignment
 
-The first step in creating the FlyCADD was obtaining the reconstructed ancestral sequence. The scripts in this folder were used to extract the ancestral sequence from the 166-way Multi-species Sequence Alignment (MSA) provided as an early version of the 298-way MSA by B. Kim et al. (2024). The alignment was generated with Cactus and includes ~ 166 Drosophila species and a reconstructed ancestral sequence for each node in the phylogeny, all in `.maf` format. Species names used in these scripts should be written as they are in the MSA.
+The first step in creating the FlyCADD was obtaining the reconstructed ancestral sequence. The scripts in this folder were used to extract the ancestral sequence from the 166-way Multi-species Sequence Alignment (MSA) provided as an early version of the 298-way MSA by B. Kim et al. (2024). The alignment was generated with Cactus and includes 166 Drosophila species and a reconstructed ancestral sequence for each node in the phylogeny, all in `.maf` format. Species names used in these scripts should be written as they are in the MSA.
 
 ### Mark outgroup
 The MSA that was used contained reconstructed ancestral sequences. The ancestral node of interest was marked with `mark_outpgroup.py` to make this sequence recognizable for the next steps. The input for the script is the MSA in `.maf` format and the output is the MAF-file with one ancestor marked by the prefix "Ancestor_". 
