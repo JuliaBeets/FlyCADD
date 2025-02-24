@@ -4,8 +4,8 @@ This repository contains the scripts, tools and the workflow used to create the 
 
 For the whole pipeline, an unmasked reference genome and an alignment file in `.maf` format were used, except when specified otherwise. All annotations and FlyCADD scores are 1-based.
 ______________________________________________________________________________________________________________________
-The repository represents FlyCADD as published in the original manuscript: {will be added once published}. </br>
-The precomputed FlyCADD scores, alignment file and other supporting data can be found on Zenodo 10.5281/zenodo.14887337. 
+The repository represents FlyCADD (v1.0.0) as published in the original manuscript : {will be added once published}. </br>
+The precomputed FlyCADD scores, alignment file and other supporting data can be found on Zenodo 10.5281/zenodo.14887338. 
 
 Contact: Julia Beets - j.beets@vu.nl 
 ______________________________________________________________________________________________________________________
