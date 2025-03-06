@@ -24,7 +24,7 @@ These scripts were excecuted on an High-Performance Cluster (Linux) in the order
 
 ## How to cite
 
-{will be added once published} 
+Pre-print on BioRxiv: Beets J, Höglund J, Kim BY, Ellers J, Hoedjes KM and Bosse M. 2025. Predicting the functional impact of single nucleotide variants in Drosophila melanogaster with FlyCADD. bioRxiv. 2025.02.27.640642. https://doi.org/10.1101/2025.02.27.640642 
 
 ## Licence
 The usage of scripts of CADD (Kircher et al. 2014) is indicated in the script descriptions. The licence is in LICENCE_hCADD.
