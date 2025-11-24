@@ -4,7 +4,7 @@ This repository contains the scripts, tools and the workflow used to create the 
 
 For the whole pipeline, an unmasked reference genome and an alignment file in `.maf` format were used, except when specified otherwise. All annotations and FlyCADD scores are 1-based.
 ______________________________________________________________________________________________________________________
-The repository represents FlyCADD as published in the original manuscript: {will be added once published}. </br>
+The repository represents FlyCADD as published in the original manuscript: Julia Beets, Julia Höglund, Bernard Y Kim, Jacintha Ellers, Katja M Hoedjes, Mirte Bosse, Predicting the functional impact of single nucleotide variants in Drosophila melanogaster with FlyCADD, Genetics, 2025;, iyaf250, https://doi.org/10.1093/genetics/iyaf250. </br>
 The precomputed FlyCADD scores, alignment file and other supporting data can be found on Zenodo 10.5281/zenodo.14887338. 
 
 Contact: Julia Beets - j.beets@vu.nl 
@@ -23,6 +23,7 @@ Each folder includes the scripts and descriptions. A [`.yml`](FlyCADD-environmen
 These scripts were excecuted on an High-Performance Cluster (Linux) in the order and with the parameters described in each respective folder.
 
 ## How to cite
+GENETICS: Julia Beets, Julia Höglund, Bernard Y Kim, Jacintha Ellers, Katja M Hoedjes, Mirte Bosse, Predicting the functional impact of single nucleotide variants in Drosophila melanogaster with FlyCADD, Genetics, 2025;, iyaf250, https://doi.org/10.1093/genetics/iyaf250
 
 Pre-print on BioRxiv: Beets J, Höglund J, Kim BY, Ellers J, Hoedjes KM and Bosse M. 2025. Predicting the functional impact of single nucleotide variants in Drosophila melanogaster with FlyCADD. bioRxiv. 2025.02.27.640642. https://doi.org/10.1101/2025.02.27.640642 
 
